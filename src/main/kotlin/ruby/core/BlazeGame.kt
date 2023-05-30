@@ -1,11 +1,11 @@
-package ruby.api
+package ruby.core
 
 import ruby.scene.SceneManager
 
 abstract class BlazeGame {
 
-    val engine: ruby.core.Engine
-        get() = ruby.core.Engine.instance
+    val engine: Engine
+        get() = Engine.instance
 
     abstract fun createScenes(sceneManager: SceneManager)
     abstract fun init()

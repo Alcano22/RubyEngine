@@ -1,8 +1,8 @@
 package ruby.graphics
 
 import ruby.gameobject.GameObject
+import ruby.gameobject.component.Camera
 import ruby.input.Input
-import ruby.scene.Camera
 import ruby.scene.SceneManager
 import ruby.util.Debug
 import java.awt.Canvas
@@ -53,10 +53,10 @@ class Window(private var _settings: Settings) : JFrame() {
         gfx.color = currentScene.backgroundColor
         gfx.fillRect(0, 0, this.width, this.height)
 
-        val cam = GameObject.findWithComponent<Camera>()!!
+        val cam = GameObject.findComponent<Camera>()!!
         gfx.translate(
-            width / 2 + cam.transform.position.x.toInt(),
-            height / 2 + cam.transform.position.y.toInt()
+            width / 2 + cam.transform.position.x.toInt() * cam.pixelsPerUnit,
+            height / 2 + cam.transform.position.y.toInt() * cam.pixelsPerUnit
         )
 
         currentScene.render(gfx)

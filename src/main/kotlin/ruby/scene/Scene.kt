@@ -1,6 +1,7 @@
 package ruby.scene
 
 import ruby.gameobject.GameObject
+import ruby.gameobject.component.Camera
 import java.awt.Color
 import java.awt.Graphics
 

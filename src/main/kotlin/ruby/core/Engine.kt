@@ -4,7 +4,7 @@ import ruby.graphics.Window
 import ruby.input.Input
 import ruby.scene.SceneManager
 
-class Engine(private val game: ruby.api.BlazeGame, windowSettings: Window.Settings) {
+class Engine(private val game: BlazeGame, windowSettings: Window.Settings) {
 
     companion object {
         lateinit var instance: Engine

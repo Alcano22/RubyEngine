@@ -10,11 +10,11 @@ abstract class Component {
 
     private lateinit var gameObjectUUID: String
 
-    protected val gameObject: GameObject
+    val gameObject: GameObject
         get() = GameObject.find(gameObjectUUID)
-    protected val transform: Transform
+    val transform: Transform
         get() = gameObject.transform
-    protected val scene: Scene
+    val scene: Scene
         get() = SceneManager.instance.currentScene!!
 
     var canUpdate = false

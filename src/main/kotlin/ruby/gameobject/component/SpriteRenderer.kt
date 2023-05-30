@@ -1,9 +1,8 @@
 package ruby.gameobject.component
 
+import ruby.extension.tint
 import ruby.gameobject.GameObject
 import ruby.graphics.Colors
-import ruby.scene.Camera
-import ruby.extension.tint
 import java.awt.Color
 import java.awt.Graphics
 import java.awt.image.BufferedImage

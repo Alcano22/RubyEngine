@@ -1,6 +1,4 @@
-package ruby.scene
-
-import ruby.gameobject.component.Component
+package ruby.gameobject.component
 
 class Camera : Component() {
 

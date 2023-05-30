@@ -1,7 +1,6 @@
 package ruby.gameobject.component
 
 import ruby.gameobject.GameObject
-import ruby.scene.Camera
 import java.awt.Graphics
 import java.awt.image.BufferedImage
 
